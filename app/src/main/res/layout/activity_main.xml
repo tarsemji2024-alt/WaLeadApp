@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+    <Button android:id="@+id/btnImport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Import Excel / CSV"/>
+    <TextView android:id="@+id/tvCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="नंबर: 0"/>
+    <EditText android:id="@+id/etMsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="3" android:gravity="top"
+        android:text="नमस्कार जी, मन्नत कम्युनिकेशंस की तरफ से Jio AirFiber (Wi-Fi + TV) पर शानदार स्कीम चल रही है। क्या आप अपने घर या दुकान के लिए इसके प्लान जानना चाहेंगे?"/>
+    <EditText android:id="@+id/etDelay" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="दो मैसेज के बीच गैप (सेकंड)" android:inputType="number" android:text="12"/>
+    <TextView android:id="@+id/tvCurrent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="अगला: -" android:textSize="18sp" android:paddingTop="8dp"/>
+    <Button android:id="@+id/btnSend" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. WhatsApp खोलो (मैसेज भरा हुआ)"/>
+    <Button android:id="@+id/btnSkip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Skip / अगला नंबर"/>
+    <Button android:id="@+id/btnReset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="शुरू से (Reset)"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AI सेटिंग" android:textStyle="bold" android:paddingTop="16dp"/>
+    <EditText android:id="@+id/etKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gemini API Key" android:inputType="textPassword"/>
+    <EditText android:id="@+id/etPlans" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="4" android:gravity="top"
+        android:hint="Jio AirFiber की स्कीमें/कीमतें यहाँ लिखें (AI इन्हीं से जवाब देगा)"/>
+    <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="आपका कॉन्टैक्ट नंबर" android:inputType="phone"/>
+    <CheckBox android:id="@+id/cbAuto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Auto-reply चालू (सिर्फ उन्हें जिन्होंने जवाब दिया)"/>
+    <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="सेटिंग सेव करो"/>
+    <Button android:id="@+id/btnAccess" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Notification Access चालू करो"/>
+
+    <Button android:id="@+id/btnRefresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Interested + AI लॉग देखो"/>
+    <TextView android:id="@+id/tvLog" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+</LinearLayout></ScrollView>
